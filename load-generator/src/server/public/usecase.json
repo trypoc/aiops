@@ -17,6 +17,18 @@
             "name":"Execute Windows Batch file",
             "script":"simple.bat",
             "type":"batch"
+        },
+        {
+            "id":4,
+            "name":"AppDynamics load generator",
+            "script":"appd_cpu.bat",
+            "type":"batch"
+        },
+        {
+            "id":5,
+            "name":"Python cpu",
+            "script":"cpu1.py",
+            "type":"python"
         }
     ]
 }
