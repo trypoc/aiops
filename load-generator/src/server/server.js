@@ -1,9 +1,11 @@
 let express = require("express");
 let path = require('path');
+let cors = require('cors');
 let listenerChildProcessEvents = require('./EventListeners.js')
 let app = express();
 
 app.use(express.static('public'))
+app.use(cors());
 
 app.get("/execute", (req, res) => {
 
@@ -15,7 +17,7 @@ app.get("/execute", (req, res) => {
   const { spawn } = require("child_process");
 
   let childProcess;
-  let pythonExePath = 'E:/param/software/python381/python';
+  let pythonExePath = 'C:/Users/MF35121T/Downloads/python381/python';
   let commandExePath = 'C:/Windows/System32/cmd.exe';
   let scriptAbsoultPath = path.join( __dirname, "/scripts/"+req.query.script);
 
