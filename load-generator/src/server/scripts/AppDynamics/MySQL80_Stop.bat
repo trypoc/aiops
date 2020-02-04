@@ -1,1 +1,1 @@
-NET STOP MySQL80
+"C:/Program Files/MySQL/MySQL Server 8.0/bin/"mysqladmin -u root -padmin shutdown

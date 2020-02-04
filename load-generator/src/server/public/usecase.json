@@ -10,7 +10,7 @@
             "id":2,
             "name":"Usecase-2 : JVM Restart",
             "script":"C:/KonaKart/bin/shutdown.bat",
-            "type":"batch"
+            "type":"tomcat"
         },
         {
             "id":3,
@@ -22,7 +22,7 @@
             "id":4,
             "name":"Usecase-6 : SQL nested exception",
             "script":"AppDynamics/MySQL80_Stop.bat",
-            "type":"batch"
+            "type":"mysql"
         }
     ]
 }
