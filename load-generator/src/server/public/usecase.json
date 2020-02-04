@@ -2,33 +2,27 @@
     "usecases": [
         {
             "id":1,
-            "name":"Execute dir command",
-            "script":"dir",
-            "type":"command"
+            "name":"Usecase-1 : JVM Utilization is more than 75%",
+            "script":"AppDynamics/Alert1.py",
+            "type":"python"
         },
         {
             "id":2,
-            "name":"Execute Hellow Python command",
-            "script":"hello.py",
-            "type":"python"
+            "name":"Usecase-2 : JVM Restart",
+            "script":"AppDynamics/KonaKart_stop.bat",
+            "type":"batch"
         },
         {
             "id":3,
-            "name":"Execute Windows Batch file",
-            "script":"simple.bat",
-            "type":"batch"
+            "name":"Usecase-3 : Slow calls",
+            "script":"AppDynamics/slowcalls.py",
+            "type":"python"
         },
         {
             "id":4,
-            "name":"AppDynamics load generator",
-            "script":"appd_cpu.bat",
+            "name":"Usecase-6 : SQL nested exception",
+            "script":"AppDynamics/MySQL80_Stop.bat",
             "type":"batch"
-        },
-        {
-            "id":5,
-            "name":"Python cpu",
-            "script":"cpu1.py",
-            "type":"python"
         }
     ]
 }
