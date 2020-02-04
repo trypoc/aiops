@@ -9,7 +9,7 @@
         {
             "id":2,
             "name":"Usecase-2 : JVM Restart",
-            "script":"AppDynamics/KonaKart_stop.bat",
+            "script":"C:/KonaKart/bin/shutdown.bat",
             "type":"batch"
         },
         {

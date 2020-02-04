@@ -17,7 +17,8 @@ app.get("/execute", (req, res) => {
   const { spawn } = require("child_process");
 
   let childProcess;
-  let pythonExePath = 'C:/Users/MF35121T/Downloads/python381/python';
+  let pythonExePath = 'python';
+  //let pythonExePath = 'C:/Users/MF35121T/Downloads/python381/python';
   let commandExePath = 'C:/Windows/System32/cmd.exe';
   let scriptAbsoultPath = path.join( __dirname, "/scripts/"+req.query.script);
 
@@ -41,9 +42,15 @@ app.get("/execute", (req, res) => {
 
     case 'batch' :
         console.log(`Given batch-task is '${req.query.script}'`);
-        console.log('Bath file path >',scriptAbsoultPath);
+        console.log('Bath file path >',req.query.script);
         // childProcess = spawn(commandExePath, ['/c', scriptAbsoultPath], {shell: true });
-        childProcess = spawn(scriptAbsoultPath, {shell: true });
+        childProcess = spawn(req.query.script, {
+          shell: true,
+          env: {
+            CATALINA_HOME:'C:/KonaKart',
+            JAVA_HOME:'C:/Program Files/Java/jdk1.8.0_221'
+        }
+         });
         registerSTDIOStreams(childProcess, res);
         listenerChildProcessEvents(childProcess);
         break;
