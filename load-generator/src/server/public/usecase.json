@@ -2,19 +2,19 @@
     "usecases": [
         {
             "id":1,
-            "name":"Usecase-1 : Heap Utilization above Threshold",
+            "name":"Heap Utilization above Threshold",
             "script":"dynatrace/dt-ops2_loadscript.py",
             "type":"python"
         },
         {
             "id":2,
-            "name":"Usecase-2 : Performance Degrade",
+            "name":"Performance Degrade",
             "script":"dynatrace/dt-slowcalls.py",
             "type":"python"
         },
         {
             "id":3,
-            "name":"Usecase-3 : JVM Process Unavailable",
+            "name":"JVM Process Unavailable",
             "script":"C:/KonaKart/bin/shutdown.bat",
             "type":"tomcat"
         },
