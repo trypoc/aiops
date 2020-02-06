@@ -9,7 +9,8 @@ export default class App extends Component {
 
     this.state = {
       output: "",
-      useCases: []
+      useCases: [],
+      toolName:null,
     };
   }
 
@@ -17,13 +18,15 @@ export default class App extends Component {
     axios.get("http://localhost:4000/usecase.json").then(res => {
       const data = res.data;
       console.log("useCases from ", data);
-      this.setState({ useCases: data.usecases });
+      this.setState({ 
+        useCases: data.usecases,
+        toolName: data.toolName});
     });
   }
 
   render() {
     if (this.state.useCases.length > 0) {
-      return <PocContainer useCases={this.state.useCases} />;
+      return <PocContainer useCases={this.state.useCases} toolName={this.state.toolName} />;
     } else return null;
   }
 }
