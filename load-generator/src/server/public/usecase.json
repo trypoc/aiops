@@ -2,26 +2,26 @@
     "usecases": [
         {
             "id":1,
-            "name":"Usecase-1 : JVM Utilization is more than 75%",
-            "script":"AppDynamics/Alert1.py",
+            "name":"Usecase-1 : Heap Utilization above Threshold",
+            "script":"dynatrace/dt-ops2_loadscript.py",
             "type":"python"
         },
         {
             "id":2,
-            "name":"Usecase-2 : JVM Restart",
+            "name":"Usecase-2 : Performance Degrade",
+            "script":"dynatace/dt-slowcalls.py",
+            "type":"python"
+        },
+        {
+            "id":3,
+            "name":"Usecase-3 : JVM Process Unavailable",
             "script":"C:/KonaKart/bin/shutdown.bat",
             "type":"tomcat"
         },
         {
-            "id":3,
-            "name":"Usecase-3 : Slow calls",
-            "script":"AppDynamics/slowcalls.py",
-            "type":"python"
-        },
-        {
             "id":4,
-            "name":"Usecase-6 : SQL nested exception",
-            "script":"AppDynamics/MySQL80_Stop.bat",
+            "name":"Usecase-4 : SQL Unavailable",
+            "script":"dynatrace/dt-mysql-stop.bat",
             "type":"mysql"
         }
     ]
