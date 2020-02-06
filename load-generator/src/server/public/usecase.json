@@ -9,7 +9,7 @@
         {
             "id":2,
             "name":"Usecase-2 : Performance Degrade",
-            "script":"dynatace/dt-slowcalls.py",
+            "script":"dynatrace/dt-slowcalls.py",
             "type":"python"
         },
         {
