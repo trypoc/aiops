@@ -17,7 +17,7 @@ export default class PocContainer extends Component {
       <div className="container" id="myPocContainer">
         <div className="row">
           <h2 className="col text-center" id="myUsecases">
-            Available Use Cases
+             {this.props.toolName} Use Cases
           </h2>
         </div>
 
@@ -58,7 +58,7 @@ export default class PocContainer extends Component {
   executeCommand = useCase => {
     axios
       .get("http://localhost:4000/execute", {
-        params: { ...useCase }
+        params: { ...useCase, toolName:this.props.toolName }
       })
       .then(res => {
         const data = res.data;

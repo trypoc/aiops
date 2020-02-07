@@ -10,14 +10,14 @@ app.get("/execute", (req, res) => {
   console.log("Query String ", req.query);
 //   console.log("Execute given command ", req.query.name);
 //   console.log("Execute given command ", req.query.script);
-//   console.log("Execute given command ", req.query.type);
+  console.log(" req.query.toolName ", req.query.toolName);
 
   const { spawn } = require("child_process");
 
   let childProcess;
   let pythonExePath = 'E:/param/software/python381/python';
   let commandExePath = 'C:/Windows/System32/cmd.exe';
-  let scriptAbsoultPath = path.join( __dirname, "/scripts/"+req.query.script);
+  let scriptAbsoultPath = path.join( __dirname, "/public/"+req.query.script);
 
   res.set("Content-Type", "text/plain");
 
