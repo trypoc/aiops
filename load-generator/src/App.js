@@ -9,7 +9,8 @@ export default class App extends Component {
 
     this.state = {
       output: "",
-      useCases: []
+      useCases: [],
+      toolName:null
     };
   }
 
