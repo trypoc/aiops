@@ -2,21 +2,33 @@
     "usecases": [
         {
             "id":1,
-            "name":"Execute dir command",
-            "script":"dir",
-            "type":"command"
-        },
-        {
-            "id":2,
-            "name":"Execute Hellow Python command",
-            "script":"Development/hello.py",
+            "name":"Generate Slow Call Script",
+            "script":"Eg-innovations/slowcalls.py",
             "type":"python"
         },
         {
+            "id":2,
+            "name":"Stop JVM Service Script",
+            "script":"C:/KonaKart/bin/stopkonakart.bat",
+            "type":"tomcat"
+        },
+        {
             "id":3,
-            "name":"Execute Windows Batch file",
-            "script":"Development/simple.bat",
-            "type":"batch"
+            "name":"High Heap Utilization Script",
+            "script":"Eg-innovations/ops1_loadscript.py",
+            "type":"python"
+        },
+        {
+            "id":4,
+            "name":"Stop MySQL DB Service Script",
+            "script":"Eg-innovations/Stop_MySQL.bat",
+            "type":"mysql"
+        },
+        {
+            "id":5,
+            "name":"Synthetic Monitoring Flow",
+            "script":"Eg-innovations/Synthetic_Monitoring_Flow.py",
+            "type":"python"
         }
     ]
 }
