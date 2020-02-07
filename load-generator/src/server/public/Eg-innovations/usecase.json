@@ -10,7 +10,7 @@
             "id":2,
             "name":"Stop JVM Service Script",
             "script":"C:/KonaKart/bin/stopkonakart.bat",
-            "type":"batch"
+            "type":"tomcat"
         },
         {
             "id":3,
@@ -22,7 +22,7 @@
             "id":4,
             "name":"Stop MySQL DB Service Script",
             "script":"Eg-innovations/Stop_MySQL.bat",
-            "type":"batch"
+            "type":"mysql"
         },
         {
             "id":5,
