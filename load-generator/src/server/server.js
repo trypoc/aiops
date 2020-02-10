@@ -20,7 +20,7 @@ app.get("/execute", (req, res) => {
   let pythonExePath = 'python';
   //let pythonExePath = 'C:/Users/MF35121T/Downloads/python381/python';
   let commandExePath = 'C:/Windows/System32/cmd.exe';
-  let scriptAbsoultPath = path.join(__dirname, "/scripts/" + req.query.script);
+  let scriptAbsoultPath = path.join(__dirname, "/public/" + req.query.script);
 
   res.set("Content-Type", "text/plain");
 
