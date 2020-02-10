@@ -1,0 +1,28 @@
+{
+    "usecases": [
+        {
+            "id":1,
+            "name":"High Heap Utilization",
+            "script":"Dynatrace/dt-ops2_loadscript.py",
+            "type":"python"
+        },
+        {
+            "id":2,
+            "name":"Stop JVM Service",
+            "script":"C:/KonaKart/bin/shutdown.bat",
+            "type":"tomcat"
+        },
+        {
+            "id":3,
+            "name":"Generate Slow Calls",
+            "script":"Dynatrace/dt-slowcalls.py",
+            "type":"python"
+        },
+        {
+            "id":4,
+            "name":"Stop MYSQL Service",
+            "script":"Dynatrace/dt-mysql-Stop.bat",
+            "type":"mysql"
+        }
+    ]
+}

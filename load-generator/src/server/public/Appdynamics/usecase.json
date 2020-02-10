@@ -1,0 +1,28 @@
+{
+    "usecases": [
+        {
+            "id":1,
+            "name":"High Heap Utilization",
+            "script":"Appdynamics/Alert1.py",
+            "type":"python"
+        },
+        {
+            "id":2,
+            "name":"Stop JVM Service",
+            "script":"C:/KonaKart/bin/shutdown.bat",
+            "type":"tomcat"
+        },
+        {
+            "id":3,
+            "name":"Generate Slow Calls",
+            "script":"Appdynamics/slowcalls.py",
+            "type":"python"
+        },
+        {
+            "id":4,
+            "name":"Stop MYSQL Service",
+            "script":"Appdynamics/MySQL80_Stop.bat",
+            "type":"mysql"
+        }
+    ]
+}
