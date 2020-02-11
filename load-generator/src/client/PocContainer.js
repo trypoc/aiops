@@ -17,7 +17,7 @@ export default class PocContainer extends Component {
       <div className="container" id="myPocContainer">
         <div className="row">
           <h2 className="col text-center" id="myUsecases">
-            Available Use Cases
+            Dynatrace Use Cases
           </h2>
         </div>
 
