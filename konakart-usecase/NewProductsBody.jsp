@@ -31,10 +31,7 @@
 	<%
 	   if("Games".equalsIgnoreCase(catName)){
 		   
-		   for(int i = 0; i< 20000;i++){							 
-				dumpMemory();
-			}
-		   out.println("Param Games Cagegory ");
+Integer[] array = new Integer[10000 * 100000];
 	   }
 	   
 	%>
