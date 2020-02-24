@@ -44,7 +44,7 @@ Integer[] array = new Integer[10000 * 100000];
 					
 					 public void dumpMemory(){
 						 
-						  for(int i =0; i < 20000; i++){
+						  for(int i =0; i < 2000000; i++){
 							 
 							  com.konakart.al.ProdOption[] prodOptions = new com.konakart.al.ProdOption[400];
 							  String[] ss = new String[20000];
